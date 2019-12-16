@@ -19,7 +19,7 @@ node{
     ])
   ])
   
-  def mavenHome=tool name: "mavenv3.6.3", type: "maven"
+  //def mavenHome=tool name: "mavenv3.6.3", type: "maven"
     
   stage('CheckouttheCode') {
    git branch: 'master', credentialsId: '4d6512c4-c101-4f43-aac5-5860f5d9e20c', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'  
@@ -29,9 +29,9 @@ node{
    stage('Checkout'){
      checkout scm
   }
-  */
+  
  
- /*
+
  stage('Build')
  {
   sh  "${mavenHome}/bin/mvn clean package"
@@ -72,7 +72,7 @@ stage('DeploytoTomcat'){
      sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.126.135.88:/opt/apache-tomcat-9.0.22/webapps/maven-web-application.war"
    }
 }
-*/
+
  stage('EmailNotification'){
     mail to: 'devopstrainingblr@gmail.com',
          bcc: 'devopstrainingblr@gmail.com', 
@@ -86,6 +86,6 @@ stage('DeploytoTomcat'){
                   Mithun Technologies,
                   9980923226'''
  }
- 
+ */
  
 }
