@@ -1,5 +1,5 @@
 node{
-{
+
 
   //http://JenkinsServerIPAddress:8080/pipeline-syntax/globals#currentBuild
   //Getting the  env  global varibale values
@@ -24,18 +24,20 @@ node{
   stage('CheckouttheCode') {
    git branch: 'master', credentialsId: '4d6512c4-c101-4f43-aac5-5860f5d9e20c', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'  
  }
+ 
   /*
    stage('Checkout'){
      checkout scm
   }
   */
  
+ /*
  stage('Build')
  {
   sh  "${mavenHome}/bin/mvn clean package"
  }
 
- /* 
+
  stage('Testing')
    {
     if(isUnix()){
@@ -45,7 +47,7 @@ node{
        bat 'mvn test'   
       }
    }
- */
+
 
  stage('SonarQubeReport')
  {
@@ -56,7 +58,7 @@ node{
  {
   sh  "${mavenHome}/bin/mvn deploy"
  }
- /*
+
  stage('DeplotoTomcat'){
      
      sh "cp $WORKSPACE/target/*.war /opt/apache-tomcat-9.0.16/webapps/"
