@@ -9,20 +9,20 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Mithun Technologies.</h1>
-<h1 align="center">Very Good Training center for DevOps with AWS in Maratha Halli and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
+<h1 align="center">Welcome to Rahul Technologies.</h1>
+<h1 align="center">Very Good Training center for DevOps with AWS in kavali and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
 		<img src="images/mithunlogo.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		Mithun Technologies, 
-		Martha Halli, Above ICICI Bank, Beside Meghana Foods,
-		Bangalore.
+		Rahul Technologies, 
+		Kavali, Above ICICI Bank, Beside Meghana Foods,
+		Kavali.
 		+91-9980923226,
 		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
+		<a href="mailto:rahul@gmail.com">Mail to Mithun Technologies</a>
 	</span>
 </div>
 <hr>
